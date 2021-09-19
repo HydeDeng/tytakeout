@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+      "module": "commonjs",
+      // "esModuleInterop": true,
+      // "allowSyntheticDefaultImports": true,
+      "target": "es2017",
+      "allowJs":true,
+      "noImplicitAny": true,
+      "moduleResolution": "node",
+      "sourceMap": true,
+      "outDir": "dist",  // TS文件编译后会放入到此文件夹内
+      "baseUrl": ".",
+      "paths": {
+          "*": [
+              "node_modules/*",  //根据项目的路径指定
+              "src/types/*"      //根据项目的路径指定
+          ]
+      }
+  },
+  "include": [
+    // "node_modules/cn-pay/*",
+    "src/**/*"
+  ]
+}
